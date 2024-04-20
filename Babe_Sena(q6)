@@ -1,0 +1,28 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input=new Scanner(System.in);
+		int n= input.nextInt();
+		int[] Arr = new int[n];
+		int coueven=0;
+		int couodd=0;
+		for(int i=0;i<n;i++){
+		    int a=input.nextInt();
+		    Arr[i]=a;
+		    if(a%2==0){
+		         coueven=coueven+1;
+		    }
+		    else
+		    couodd=couodd+1;
+		}
+		if(coueven>couodd)
+		System.out.println("READY FOR BATTLE");
+		else
+		System.out.println("NOT READY");
+	}
+}
