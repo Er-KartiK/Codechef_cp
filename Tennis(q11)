@@ -1,0 +1,24 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input = new Scanner(System.in);
+		int t= input.nextInt();
+		for(int i=0;i<t;i++){
+		    int r1=input.nextInt();
+		    int r2 = input.nextInt();
+		    int r3 = input.nextInt();
+		    int r4 = input.nextInt();
+		    int x=r1+r2+r3+r4;
+		    if(x==0)
+		    System.out.println("IN");
+		    else
+		    System.out.println("OUT");
+		}
+
+	}
+}
