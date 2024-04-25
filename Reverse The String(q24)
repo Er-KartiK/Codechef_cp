@@ -1,0 +1,18 @@
+import java.util.*;
+
+class Codechef {
+    public static void main(String[] args) throws java.lang.Exception {
+        Scanner input = new Scanner(System.in);
+        int t = input.nextInt();
+        while (t-- > 0) {
+            int n = input.nextInt();
+            String str = Integer.toString(n); // Convert number to string
+            StringBuilder reversedStr = new StringBuilder(str).reverse(); // Reverse the string
+            String result = reversedStr.toString().replaceFirst("^0+", ""); // Remove leading zeros
+            if (result.isEmpty()) { // If result is empty after removing zeros, it was a number like "0" or "0000"
+                result = "0";
+            }
+            System.out.println(result);
+        }
+    }
+}
